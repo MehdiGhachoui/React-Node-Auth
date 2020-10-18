@@ -1,0 +1,33 @@
+const ONE_HOUR = 1000 * 60 * 60
+
+const TWELVE_HOURS = ONE_HOUR * 12
+
+// Bcrypt
+
+module.exports = {
+
+  auth : {
+      email : '',
+      pass  : ''
+  },
+
+
+  BCRYPT_WORK_FACTOR : 12,
+
+  BCRYPT_MAX_BYTES : 72,
+
+  EMAIL_VERIFICATION_TIMEOUT : TWELVE_HOURS,
+
+
+  EMAIL_VERIFICATION_TOKEN_BYTES : 40,
+
+
+  EMAIL_VERIFICATION_SIGNATURE_BYTES : 64,
+
+
+
+  PASSWORD_RESET_BYTES : 40,
+
+  PASSWORD_RESET_TIMEOUT : ONE_HOUR
+
+}
